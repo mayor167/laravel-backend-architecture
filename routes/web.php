@@ -5,11 +5,12 @@ use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 
 Route::get('/contact', function () {
-    return "09063676340";
+    // return "09063676340";
+    return view('contact');
 });
 Route::get('/portifolio', function(){
     return view('portifolio');
