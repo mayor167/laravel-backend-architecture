@@ -1,8 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -40,7 +39,7 @@ Route::post('formsubmitted', function(Request $request){
 //  return "Form Submitted Succesfully!";
 //validating before grapping from user
 $request->validate([
-    "fullname" => "required|min:3|max:50",
+    "fullname" => "required|min:3|max:50",  
     "email" => "required|min:3|max:50|email",
 ]);
 $fullname = $request->input("fullname");

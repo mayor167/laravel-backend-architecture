@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <img src="{{ asset('images/search.jpg') }}" style="width:50px; height:50px" alt="">
    @yield('header')     
     </header>
     <main>
