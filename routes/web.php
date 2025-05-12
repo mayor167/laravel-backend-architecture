@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
@@ -48,3 +49,4 @@ echo "Form submitted succesfully!<br>";
 return "Your Full name is $fullname and your email adddress is $email";
 })->name('formsubmitted');
 // echo "I'm here"
+Route::resource('/posts', PostController::class);
